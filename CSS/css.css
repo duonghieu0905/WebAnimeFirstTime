@@ -1,0 +1,273 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #272727;
+}
+.container-fluid{
+    margin: 0 auto;
+    background-color: #272727;
+    font-family: 'Times New Roman', Times, serif !important;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0;
+    width: 100%;
+
+}
+a:hover{
+    cursor: url("../images/icon/cursor_img.png"), auto !important ;
+}
+nav{
+    width: 100%;
+    background-color: rgb(44, 17, 17);
+}
+.navbar-brand img{
+
+    width: 150px;
+    position: relative;
+    top:0px;
+}
+.dropdown-menu{
+    width: 640px;
+    text-align: left;
+    background-color: rgba(35, 0, 0, 0.85);
+    
+}
+.dropdown-menu li{
+    display: inline-block;
+    width: 100px;
+}
+.dropdown-item{
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+.dropdown-item:hover{
+    color: white;
+    background: none;
+    transition: 0.5s;
+}
+.img_login,.img_register{
+    width: 20px;
+}
+#login,#register{    font-size: 18px;color: lightblue;
+}
+#formlog{
+    background-image: url(../images/icon/background_form_login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    #formreg{
+        background-image: url(../images/icon/background_form_register.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .form-group label{
+        color: #272222
+    
+    }
+    .modal-header img{
+        position: relative;
+        width: 70px;
+    }
+    .modal-header h1{
+        display: inline;
+        position: relative;
+        top: 10px;
+        color:#272222;
+        font-size: 40px;
+    
+    }
+section{
+    width: 100%;
+    padding-top: 70px;
+}
+.content-slide{
+    width: 85%;
+    margin: auto;
+    height: auto;
+    padding-top: 10px;
+}
+.carousel-item{
+    height: 550px;
+    width: 100%;
+    
+}
+.carousel-inner a img {
+    width: 100%;
+    height: 100%;
+}
+.content-card{
+    width: 100%;
+}
+.content-card h4{
+    padding-top: 5px;
+}
+.content-card{
+    width: 85%;
+    margin: 0 auto;
+    height: auto;
+    padding-top: 10px;
+}
+.content-card .ribbon{
+   position: absolute;
+   top: 5px;
+   left: 5px;
+   font-size: 13px;
+   z-index: 1;
+}
+
+.content-card h4 a{
+    color: whitesmoke;
+    background-color:   rgb(41, 39, 129,0.5);
+}
+.content-card h4 a{
+    border: 2px ridge white;
+    box-shadow: 1px 1px midnightblue ;
+    text-shadow: 1px 1px midnightblue, 3px 3px rgb(24, 16, 16);
+    display: inline-block;
+    padding:5px;
+    padding-right: 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    transition: 0.5s;
+    
+}
+.content-card h4 a:hover{
+    background-color:maroon;
+    transition: 0.5s;
+    color: lightyellow;
+    border-color: lightyellow;
+    color: orange;
+}
+.content-card p{
+    text-align: right;
+}
+
+.content-card p a{
+    text-decoration: none;  
+    font-size: 15px;
+    color: cornflowerblue;
+    transition: 0.5;
+}
+.content-card p a:hover{
+    color: yellow;
+    text-shadow: 1px 1px cornflowerblue, 3px 3px rgb(24, 16, 16);
+    transition: 0.5s;
+    font-size: 16px;    
+
+}
+.content-card h4 a img{
+    width: 27px;
+    height: 25px;
+    position: relative;
+    top: -2.5px;
+    margin-right: 2px;
+    z-index: 0;
+}
+.card{
+    background-color: #272727;
+    border: none;
+    position: relative;
+}
+.card a{
+    text-decoration: none;
+    position: relative;
+}
+.card-title{
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+    text-align: left;
+    font-size:17px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.card img{
+    border-radius: 10px;
+    height: 300px;
+    transition: 0.5s;
+    position: relative;
+}
+.card:hover  img{
+    transition: 0.5s;
+    box-shadow: 5px 5px 5px 5px rgb(0, 0, 0,0.5);
+    width: 102%;
+    z-index: 2;
+    
+}
+.card:hover .card-title{
+    color: yellow;
+    text-shadow: 1px 1px cornflowerblue, 3px 3px rgb(24, 16, 16);
+    transition: 0.5s;
+}
+.content-card .comment-card{
+    position: absolute;
+    left: 98%;
+    z-index: 2;
+    width: 300px;
+    display: none;
+    background: black;
+    color: rgb(218, 205, 205);
+    font-size: 15px;
+    
+}
+.content-card .comment-card-last{
+    position: absolute;
+    left: -157%;
+}
+.card:hover .comment-card{
+    display: inline;
+    background-color: rgba(35, 0, 0, 0.85);
+}
+.comment-card .card-body .card-text{
+    text-align: left;
+}
+.comment-card .card-header{
+    color: cornflowerblue;
+    border-bottom: 0.5px solid rgb(235, 221, 221);
+    font-size: 17px;
+}
+footer{
+    width: 100%;
+    height: auto;
+    
+    background-color: rgb(44, 17, 17);
+    color: white;
+}
+footer img.logo,p{
+    padding-top: 2%;
+    padding-left: 5%;
+    
+}
+footer img.logo{
+    width: 150px;
+
+}
+.myfooter{
+    padding-top: 4%;
+    padding-left: 8%;
+    width: 50%;
+    float: left;
+    padding-bottom: 4%;
+}
+.myfooter img{
+width: 40px;
+height: 40px;
+margin-right: 1%;
+transition: 1.5s;
+}
+.myfooter a{
+    text-decoration: none;
+    color: white;
+}
+.myfooter:hover img{
+    transform: rotate(360deg);
+    transition: 1.5s;
+}
+.myfooter:hover a{
+    color: blueviolet;
+}
+footer p:hover{
+    color: blueviolet;
+}

@@ -1,0 +1,160 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #272727;
+    position: relative;
+}
+.container-fluid{
+    margin: 0 auto;
+    background-color: #272727;
+    font-family: 'Times New Roman', Times, serif !important;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0;
+    position: relative;
+}
+a:hover{
+    cursor: url("../images/icon/cursor_img.png"), auto !important ;
+}
+nav{
+    width: 100%;
+     background-color: rgb(44, 17, 17);
+}
+.navbar-brand img{
+
+    width: 150px;
+    position: relative;
+    top:0px;
+}
+.dropdown-menu{
+    width: 640px;
+    text-align: left;
+    background-color: rgba(35, 0, 0, 0.85);
+    
+}
+.dropdown-menu li{
+    display: inline-block;
+    width: 100px;
+}
+.dropdown-item{
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+.dropdown-item:hover{
+    color: white;
+    background: none;
+    transition: 0.5s;
+}
+.img_login,.img_register{
+    width: 20px;
+}
+#login,#register{    font-size: 18px;color: lightblue;
+}
+#formlog{
+    background-image: url(../images/icon/background_form_login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    #formreg{
+        background-image: url(../images/icon/background_form_register.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .form-group label{
+        color: #272222
+    
+    }
+    .modal-header img{
+        position: relative;
+        width: 70px;
+    }
+    .modal-header h1{
+        display: inline;
+        position: relative;
+        top: 10px;
+        color:#272222;
+        font-size: 40px;
+    
+    }
+
+img.top-gif{
+    position: absolute;
+    top: 50%;
+    left: 80%;
+    width: 20%;
+}
+section{
+    width: 100%;
+    padding-top: 60px;
+}
+section h2{
+    text-align: center;
+    color: aqua;
+    text-shadow: 1px 1px rgb(17, 19, 22), 3px 3px rgb(24, 16, 16);
+}
+section .info{
+    margin-left: 10%;
+    color: rgb(185, 199, 59);
+    text-shadow: 0.5px 0.5px rgb(185, 199, 59), 3px 3px rgb(24, 16, 16);
+}
+section .info >li{
+    list-style-type: none;
+}
+section .info li a{
+    text-decoration: none;
+    color: rgb(143, 185, 169);
+
+}
+section .infolv2{
+    padding-left: 40px;
+    color: rgb(143, 185, 169);
+    text-shadow: 0.2px 0.2px rgb(143, 185, 169), 3px 3px rgb(24, 16, 16);
+}
+section .infolv2 li{
+    list-style: disc;
+}
+footer{
+    width: 100%;
+    height: auto;
+    
+    background-color: rgb(44, 17, 17);
+    
+    color: white;
+}
+footer img.logo,p{
+    padding-top: 2%;
+    padding-left: 5%;
+    
+}
+footer img.logo{
+    width: 150px;
+
+}
+.myfooter{
+    padding-top: 4%;
+    padding-left: 8%;
+    width: 50%;
+    float: left;
+    padding-bottom: 4%;
+}
+.myfooter img{
+width: 40px;
+height: 40px;
+margin-right: 1%;
+transition: 1.5s;
+}
+.myfooter a{
+    text-decoration: none;
+    color: white;
+}
+.myfooter:hover img{
+    transform: rotate(360deg);
+    transition: 1.5s;
+}
+.myfooter:hover a{
+    color: blueviolet;
+}
+footer p:hover{
+    color: blueviolet;
+}

@@ -1,0 +1,199 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    background-color: #272727;
+    position: relative;
+}
+.container-fluid{
+    margin: 0 auto;
+    background-color: #272727;
+    font-family: 'Times New Roman', Times, serif !important;
+    color: rgba(255, 255, 255, 0.5);
+    padding: 0;
+    position: relative;
+}
+a:hover{
+    cursor: url("../images/icon/cursor_img.png"), auto !important ;
+}
+nav{
+    width: 100%;
+     background-color: rgb(44, 17, 17);
+}
+.navbar-brand img{
+
+    width: 150px;
+    position: relative;
+    top:0px;
+}
+.dropdown-menu{
+    width: 640px;
+    text-align: left;
+    background-color: rgba(35, 0, 0, 0.85);
+    
+}
+.dropdown-menu li{
+    display: inline-block;
+    width: 100px;
+}
+.dropdown-item{
+    color: rgba(255, 255, 255, 0.5);
+    transition: 0.5s;
+}
+.dropdown-item:hover{
+    color: white;
+    background: none;
+    transition: 0.5s;
+}
+.img_login,.img_register{
+    width: 20px;
+}
+#login,#register{    font-size: 18px;color: lightblue;
+}
+#formlog{
+    background-image: url(../images/icon/background_form_login.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
+    #formreg{
+        background-image: url(../images/icon/background_form_register.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .form-group label{
+        color: #272222
+    
+    }
+    .modal-header img{
+        position: relative;
+        width: 70px;
+    }
+    .modal-header h1{
+        display: inline;
+        position: relative;
+        top: 10px;
+        color:#272222;
+        font-size: 40px;
+    
+    }
+
+
+section{
+    width: 100%;
+  
+    padding-top: 60px;
+}
+section .info{
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 10px;
+   
+}
+section .img-info{
+    margin: auto;
+}
+section .text-info h3{
+color: rgba(160, 214, 33, 0.788);
+text-shadow: 0.5px 0.5px rgb(160, 214, 33), 2px 2px rgb(24, 16, 16);
+}
+section .img-info a span{
+    font-size: 110%;
+    color: rgba(198, 190, 214, 0.788);
+    text-shadow: 0.5px 0.5px rgb(175, 31, 31), 2px 2px rgb(24, 16, 16);
+}
+section .img-info a:hover span{
+    color: orange;
+}
+section .img-info img{
+    width: 100%;
+    margin-bottom: 5px;
+}
+section .text-info-2 h2{
+    text-align: center;
+}
+section .text-info-2 p{
+    padding: 5px;
+}
+section .table{
+    color: white;
+    padding:5px; 
+}
+section .table h6{
+    font-size: 18px;
+}
+section .table a{
+    text-decoration: none;
+    color: unset;
+    transition: 0.5s;
+}
+section .table a:hover{
+    color: blueviolet;
+    text-shadow: 0.5px 0.5px rgb(74, 65, 124), 2px 2px rgb(24, 16, 16);
+    transition: 0.5s;
+}
+section .text-info-2 img{
+    width: 100%;
+    padding-bottom: 20px;
+}
+section .text-info-2 h2{
+    color: rgba(202, 199, 212, 0.788);
+text-shadow: 0.5px 0.5px rgb(74, 65, 124), 2px 2px rgb(24, 16, 16);
+}
+section .text-info-2{
+    color: white;
+}
+section .text-info-2 p{
+    font-size: 18px;
+}
+section .comment h2{
+    color: rgba(202, 199, 212, 0.788);
+text-shadow: 0.5px 0.5px rgb(74, 65, 124), 2px 2px rgb(24, 16, 16);
+text-align: center;
+}
+section .table-cmt{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+footer{
+    width: 100%;
+    height: auto;
+    
+    background-color: rgb(44, 17, 17);
+    
+    color: white;
+}
+footer img.logo,p{
+    padding-top: 2%;
+    padding-left: 5%;
+    
+}
+footer img.logo{
+    width: 150px;
+
+}
+.myfooter{
+    padding-top: 4%;
+    padding-left: 8%;
+    width: 50%;
+    float: left;
+    padding-bottom: 4%;
+}
+.myfooter img{
+width: 40px;
+height: 40px;
+margin-right: 1%;
+transition: 1.5s;
+}
+.myfooter a{
+    text-decoration: none;
+    color: white;
+}
+.myfooter:hover img{
+    transform: rotate(360deg);
+    transition: 1.5s;
+}
+.myfooter:hover a{
+    color: blueviolet;
+}
+footer p:hover{
+    color: blueviolet;
+}

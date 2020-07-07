@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Anime Website</title>
+    <link rel="icon" href="../Images/icon/icon_title.png">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../CSS/bootstrap.min.CSS">
+    
+    <!-- <link rel="stylesheet" href="../CSS/all.css"  integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous"> -->
+    <link rel="stylesheet" href="../CSS/all.css">
+    <script type="text/javascript" src="../JS/jquery.min.js"></script>
+    <script type="text/javascript" src="../JS/popper.min.js"></script>
+    <script type="text/javascript" src="../JS/bootstrap.min.js"></script>
+    <!--MYCSS and JAVASCRIPT-->
+    <link rel="stylesheet" href="../CSS/css.css">
+    <script type="text/javascript" src="../JS/javascript.js"></script>
+    <script type="text/javascript" src="../JS/kiemtraloi.js"></script>
+    
+</head>
+
+<body>
+    <div class="container-fluid">
+        
+        <div class="row">
+            <!--Navigator-->
+            <div class="col-md-12">
+                <nav class="navbar navbar-expand-lg navbar-dark fixed-top ">
+                     <!-- Brand -->
+                        <a class="navbar-brand" href="../HTML/Index.html"><img src="../Images/icon/logo.PNG"
+                            alt="logo"></a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#mynav" aria-controls="mynav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                   
+                    <!-- Links -->
+                    <div class="collapse navbar-collapse" id="mynav">
+                    <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="../HTML/Index.html">Trang Chủ</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Thể Loại
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../HTML/index_type_hanhdong.html">Hành Động</a></li>
+                                <li><a class="dropdown-item" href="../HTML/index_type_trinhtham.html">Trinh Thám</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../HTML/index_type_kamen.html">Kamen</a></li>
+                                <li><a class="dropdown-item" href="../HTML/index_type_harem.html">Harem</a></li>
+                                <li><a class="dropdown-item" href="../HTML/index_type_phieuluu.html">Phiêu Lưu</a></li>
+                                <li><a class="dropdown-item" href="../HTML/index_type_phepthuat.html">Phép Thuật</a>
+                                </li>
+                                <li><a class="dropdown-item" href="../HTML/index_type_haihuoc.html">Hài Hước</a></li>
+                                <li><a class="dropdown-item" href="../HTML/index_type_lichsu.html">Lịch Sử</a></li>
+                                <li><a class="dropdown-item" href="../HTML/index_type_hocduong.html">Học Đường</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                                Năm phát hành
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="../HTML/index_year_1900_2000.html">1900-2000</a></li>
+                                    <li><a class="dropdown-item" href="../HTML/index_year_2001_2003.html">2001-2003</a></li>
+                                    <li><a class="dropdown-item" href="../HTML/index_year_2004_2006.html">2004-2006</a></li>
+                                    <li><a class="dropdown-item" href="../HTML/index_year_2007_2009.html">2007-2009</a></li>
+                                    <li><a class="dropdown-item" href="../HTML/index_year_2010_2012.html">2010-2012</a></li>
+                                    <li><a class="dropdown-item" href="../HTML/index_year_2013_2015.html">2013-2015</a></li>
+                                    <li><a class="dropdown-item" href="../HTML/index_year_2016_2018.html">2016-2018</a></li>
+                                    <li><a class="dropdown-item" href="../HTML/index_year_2019_2021.html">2019-2021</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Fanpage</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../HTML/about.html">About</a>
+                        </li>
+                    </ul>
+                    <button id="login" data-toggle="modal" data-target="#Login"
+                        class="btn btn-dark mr-sm-2 my-sm-0 btn-sm" type="submit"><img class="img_login"
+                            src="../Images/icon/icon_login.png" alt=""> Đăng
+                        nhập</button>
+
+                    <button id="register" data-toggle="modal" data-target="#Register"
+                        class="btn btn-dark my-2 my-sm-0 btn-sm" type="submit"><img class="img_register"
+                            src="../Images/icon/icon_login.png" alt=""> Đăng
+                        kí</button>
+                    </div>
+                </nav>
+            </div>
+        </div>
+        <div class="row">
+            <!--Section-->
+            <section>
+                <!--SlideShow-->
+                <div class="col-md-12 content-slide">
+
+                    <div id="animeslideshow" class="carousel slide" data-ride="carousel">
+
+                        <!-- Indicators -->
+                        <ul class="carousel-indicators">
+                            <li data-target="#animeslideshow" data-slide-to="0" class="active"></li>
+                            <li data-target="#animeslideshow" data-slide-to="1"></li>
+                            <li data-target="#animeslideshow" data-slide-to="2"></li>
+                            <li data-target="#animeslideshow" data-slide-to="3"></li>
+                            <li data-target="#animeslideshow" data-slide-to="4"></li>
+                        </ul>
+
+                        <!-- The slideshow -->
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <a href="../HTML/info_video.html"><img src="../Images/slideshow/your_name.jpg" alt="Your Name"></a>
+                                <!-- <div class="carousel-caption">
+                                                <h1>Your Name</h1>
+                                            </div> -->
+
+
+                            </div>
+                            <div class="carousel-item">
+                                <a href="../HTML/info_video.html"><img src="../Images/slideshow/strongworld_onepiece.jpg" alt="One Piece"></a>
+                                <!-- <div class="carousel-caption">
+                                                <h1>One Piece</h1>
+                                              </div> -->
+                            </div>
+                            <div class="carousel-item">
+                                <a href="../HTML/info_video.html"><img src="../Images/slideshow/movie_swordartonline.jpg"
+                                        alt="Sword Art Online"></a>
+
+
+                                <!-- <div class="carousel-caption">
+                                                        <h1>Sword Art Online</h1>
+                                                    </div>         -->
+
+                            </div>
+                            <div class="carousel-item">
+                                <a href="../HTML/info_video.html"><img src="../Images/slideshow/movie_nogamenolife.jpg"
+                                        alt="No Game No Life"></a>
+                                <!-- <div class="carousel-caption">
+                                                <h1>No Game No Life</h1>
+                                            </div> -->
+                            </div>
+                            <div class="carousel-item">
+                                <a href="../HTML/info_video.html"><img src="../Images/slideshow/movie23_detetiveconan.jpg"
+                                        alt="Detetive Conan"></a>
+                                <!-- <div class="carousel-caption">
+                                                        <h1>Detetive Conan</h1>
+                                                    </div> -->
+                            </div>
+                        </div>
+
+                        <!-- Left and right controls -->
+                        <a class="carousel-control-prev" href="#animeslideshow" data-slide="prev">
+                            <span class="carousel-control-prev-icon"></span>
+                        </a>
+                        <a class="carousel-control-next" href="#animeslideshow" data-slide="next">
+                            <span class="carousel-control-next-icon"></span>
+                        </a>
+                    </div>
+
+                </div>
+                <!--Card-->
+                <div class="col-md-12 content-card">
+                        <h4><a href=""><img src="../Images/icon/icon_h4.png" alt=""> Anime Mới Cập Nhật</a></h4>
+    
+                        <div class="card-deck">
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/kenja_no_mago.jpg"
+                                        alt="Card image cap"></a>
+                                <span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">Kenja No Mago</div>
+                                    <div class="card-body">
+                                        <p class="card-text">Magic!? easy to use.</p>
+                                    </div>
+                                </div>
+    
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Kenja No Mago</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/nobunaga_sensei_no_osanazuma.jpg"
+                                        alt="Card image cap"></a>
+                                <span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">Blanobunaga Sensei No Osanazumack</div>
+                                    <div class="card-body">
+                                        <p class="card-text">who i am? who are these girls ?</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Blanobunaga Sensei No Osanazumack</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/one_punch_man_ss2.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">OP man</div>
+                                    <div class="card-body">
+                                        <p class="card-text">Why if i so op ?</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">One Punch Man SS2</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/demon_slayer.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">Demon Slayer</div>
+                                    <div class="card-body">
+                                        <p class="card-text">Time to find and slay demon</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Demon Slayer</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top"
+                                        src="../Images/img/that_time_i_got_reincarnated_as_a_slime.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card comment-card-last">
+                                    <div class="card-header">Slime!?</div>
+                                    <div class="card-body">
+                                        <p class="card-text">wake up and become the slime in another world.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">That Time I Got Reincarnated As A Slime</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+    
+                        </div>
+                        <p><a href="">Xem Thêm &#8594</a></p>
+    
+                        <h4><a href=""><img src="../Images/icon/icon_h4.png" alt=""> Top Anime</a></h4>
+                        <div class="card-deck">
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/dororo.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">DORORO</div>
+                                    <div class="card-body">
+                                        <p class="card-text">A lord named Daigo exchanged the parts of his newborn son for 12 demons. This is in exchange for the domination of the country. However, the infant he abandoned was saved by the physician Jukai.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Dororo</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/love_is_war.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">KAGUYA-SAMA WA KOKURASETAI: TENSAI-TACHI NO RENAI ZUNOUSEN</div>
+                                    <div class="card-body">
+                                        <p class="card-text">Considered a genius by the highest score in the country, Miyuki Shirogane leads the student council of the prestigious Shuchiin Academy as president, working with the beautiful and wealthy vice president Kaguya Shinomiya. The two are often considered perfect couples by students although they don't have any romantic relationships.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Love is War</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/date_a_live_ss3.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">Date A Live III</div>
+                                    <div class="card-body">
+                                        <p class="card-text">he return of a person who never existed.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Date A Live III</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/gotoubun_no_hanayome.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">GOTOUBUN NO HANAYOME</div>
+                                    <div class="card-body">
+                                        <p class="card-text">A romantic high school comedy with five times the cute girls! A high school boy has to work part-time to help five sisters study so they can graduate, but the only thing these elite groups have in common is that they all hate learning!</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Gotoubun No Hanayome</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/yakusoku_no_neverland.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card comment-card-last">
+                                    <div class="card-header">YAKUSOKU NO NEVERLAND</div>
+                                    <div class="card-body">
+                                        <p class="card-text">At Grace Field House, life cannot be better for orphans! Although they do not have parents, along with other children and a kind Mama who take care of them, they form a big, happy family. No children are ignored, especially when they are adopted at the age of 12. Their daily lives are related to rigorous tests, but then they are allowed to play outside.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Yakusoku No Neverland</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                        </div>
+                        <p><a href="">Xem Thêm &#8594</a></p>
+                        <h4><a href=""><img src="../Images/icon/icon_h4.png" alt=""> Anime Dài Tập</a></h4>
+    
+                        <div class="card-deck">
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/detective_conan.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card ">
+                                    <div class="card-header">DETECTIVE CONAN</div>
+                                    <div class="card-body">
+                                        <p class="card-text">I will always be your savior.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Detective Conan</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/one_piece.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">One Piece</div>
+                                    <div class="card-body">
+                                        <p class="card-text">Age of pirate.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">One Piece</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/drangon_ball_super.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">Drangon Ball Super</div>
+                                    <div class="card-body">
+                                        <p class="card-text">Find dragon ball ?.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Drangon Ball Super</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/fairy_tail_ss3.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">Fairy Tail</div>
+                                    <div class="card-body">
+                                        <p class="card-text">About Fairy tail guild.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Fairy Tail</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/naruto_shippuden.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card comment-card-last">
+                                    <div class="card-header">Naruto Shippuden</div>
+                                    <div class="card-body">
+                                        <p class="card-text">Next season of Naruto .</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Naruto Shippuden</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+    
+                        </div>
+                        <p><a href="">Xem Thêm &#8594</a></p>
+                        <h4><a href=""><img src="../Images/icon/icon_h4.png" alt=""> Anime Lịch Sử</a></h4>
+    
+                        <div class="card-deck">
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/grave_of_the_ fireflies.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">Grave Of The Fireflies</div>
+                                    <div class="card-body">
+                                        <p class="card-text">As World War II reaches its conclusion in 1945, Japan faces widespread destruction in the form of American bombings, devastating city after city. Hotaru no Haka, also known as Grave of the Fireflies, is the story of Seita and his sister Setsuko, two Japanese children whose lives are ravaged by the brutal war. They have lost their mother, their father, their home, and the prospect of a bright future—all tragic consequences of the war.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Grave Of The Fireflies</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/inuyasha.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">Inuyasha</div>
+                                    <div class="card-body">
+                                        <p class="card-text">Based on the Shogakukan award-winning manga of the same name, InuYasha follows Kagome Higurashi, a fifteen-year-old girl whose normal life ends when a demon drags her into a cursed well on the grounds of her family's Shinto shrine. Instead of hitting the bottom of the well, Kagome ends up 500 years in the past during Japan's violent Sengoku period with the demon's true target, a wish-granting jewel called the Shikon Jewel, reborn inside of her.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Inuyasha</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/doraemon.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">Doraemon</div>
+                                    <div class="card-body">
+                                        <p class="card-text">Nobita Nobi is a normal fourth grade student. This all changes, however, when a blue robotic cat appears from his desk drawer. Calling himself Doraemon, this robot tells Nobita that his future descendants from the 22nd century live in poverty because of all the mistakes he made. Therefore, they have sent Doraemon to serve as a guide and mentor to Nobita, so that their future may change for the better. What Doraemon comes to learn, though, is that Nobita is the weakest and laziest student in the whole school.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Doraemon</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/spirited_away.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">Spirited Away</div>
+                                    <div class="card-body">
+                                        <p class="card-text">Stubborn, spoiled, and naïve, 10-year-old Chihiro Ogino is less than pleased when she and her parents discover an abandoned amusement park on the way to their new house. Cautiously venturing inside, she realizes that there is more to this place than meets the eye, as strange things begin to happen once dusk falls. Ghostly apparitions and food that turns her parents into pigs are just the start—Chihiro has unwittingly crossed over into the spirit world. Now trapped, she must summon the courage to live and work amongst spirits, with the help of the enigmatic Haku and the cast of unique characters she meets along the way.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Spirited Away</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img/demon_slayer.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card comment-card-last">
+                                    <div class="card-header">Demon Slayer</div>
+                                    <div class="card-body">
+                                        <p class="card-text">Time to find and slay demon.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Demon Slayer</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+    
+                        </div>
+                        <p><a href="../HTML/index_type_lichsu.html">Xem Thêm &#8594</a></p>
+                        <h4><a href=""><img src="../Images/icon/icon_h4.png" alt=""> Movie</a></h4>
+    
+                        <div class="card-deck">
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img_movie/z_onepiece.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">Z - One Piece</div>
+                                    <div class="card-body">
+                                        <p class="card-text">The Straw Hat Pirates enter the rough seas of the New World in search of the hidden treasures of the Pirate King, Gol D. Roger－One Piece. On their voyage, the pirates come across a terrifying, powerful man, former Marine Admiral Z.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Z - One Piece</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img_movie/naruto_thelast.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">The Last - Naruto Shippuden</div>
+                                    <div class="card-body">
+                                        <p class="card-text">It has been two years since the Fourth Shinobi World War, and the world is once again existing in harmony—that is, until another threat surfaces and once again puts the planet on the very brink of destruction.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">The Last - Naruto Shippuden</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img_movie/movie1_trinityseven.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card">
+                                    <div class="card-header">Trinity Seven Movie</div>
+                                    <div class="card-body">
+                                        <p class="card-text">One day, the bright red sun stopped shining, causing the "Breakdown Phenomenon"—the destruction of Arata Kasuga's town and the disappearance of the people inhabiting it. All, however, is not yet lost; by utilizing the magical grimoire given to him by his childhood friend and cousin Hijiri Kasuga, Arata's world gets artificially reconstructed.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Trinity Seven Movie</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" src="../Images/img_movie/movie1_fairytail.jpg"
+                                        alt="Card image cap"></a><span class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card ">
+                                    <div class="card-header">Fairy Tail Movie</div>
+                                    <div class="card-body">
+                                        <p class="card-text">In the mystical land of Fiore, magic exists as an essential part of everyday life. Countless magic guilds lie at the core of all magical activity, and serve as venues for like-minded mages to band together and take on job requests. Among them, Fairy Tail stands out from the rest as a place of strength, spirit, and family.</p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Fairy Tail Movie</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+                            <div class="card">
+                                <a href="../HTML/info_video.html"><img class="card-img-top" title="#divcommnet"
+                                        src="../Images/img_movie/gold_onepiece.png" alt="Card image cap"></a> <span
+                                    class="badge badge-dark ribbon">FULL</span>
+                                <div class="card mb-3 comment-card comment-card-last">
+                                    <div class="card-header">Gold - One Piece</div>
+                                    <div class="card-body">
+                                        <p class="card-text">In One Piece Film Gold, The Straw Hats are at it again in an all-new high-flying adventure! A gripping tale unfolds in the spectacular city of Gran Tesoro, where Luffy and his crew are drawn by dreams of hitting the jackpot. With so much luck, Luffy's winning streak can't possibly end. But behind the gilded curtains lies a powerful king whose deep pockets and deeper ambitions spell disaster for all.
+    </p>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <a href="../HTML/info_video.html">
+                                        <h5 class="card-title">Gold - One Piece</h5>
+                                    </a>
+    
+                                </div>
+                            </div>
+    
+                        </div>
+                        <p><a href="">Xem Thêm &#8594</a></p>
+    
+                    </div>
+            </section>
+        </div>
+        <div class="row">
+            <!--Footer-->
+            <div class="col-md-12">
+                <footer>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <img class="logo" src="../Images/icon/logo.PNG" alt="">
+                            <p>The world of anime for every one @@</p>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="myfooter col-md-6 col-xs-12"><img src="../Images/icon/icon_fb.png" alt=""><a href="">duonghieu@gmail.com</a></div>
+                            <div class="myfooter col-md-6 col-xs-12"><img src="../Images/icon/icon_twitter.png" alt=""><a href="">baoanh.27.27</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <!--Modal Login-->
+    <div id="Login" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content" id="formlog">
+                <div class="modal-header">
+                    <img id="imgform" src="../Images/icon/icon_form.png" alt="">
+                    <h1 class="modal-title">Login</h1>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="usr1">Tên đăng nhập</label>
+                            <input type="text" class="form-control" id="usr1"><div style="color:red;" id="ertenDN1"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Mật khẩu</label>
+                            <input type="password" class="form-control" id="pwd2"><div style="color:red;" id="ermk3"></div>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark">Đăng
+                        nhập</button>
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!--Modal Register-->
+    <div id="Register" class="modal fade" role="dialog">
+        <div class="modal-dialog">
+            <!-- Modal content-->
+            <div class="modal-content" id="formreg">
+                <div class="modal-header">
+                    <img id="imgform" src="../Images/icon/icon_form1.png" alt="">
+                    <h1 class="modal-title">Register</h1>
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="name">Họ tên *</label>
+                            <input type="text" class="form-control" id="name"><div style="color:red;" id="erhoten"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="usr">Tên đăng nhập *</label>
+                            <input type="text" class="form-control" id="usr"><div style="color:red;" id="ertenDN"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwd">Mật khẩu*</label>
+                            <input type="password" class="form-control" id="pwd1"><div style="color:red;" id="ermk1"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="pwdrepeat">Xác nhận mật khẩu *</label>
+                            <input type="password" class="form-control" id="pwdrepeat"><div style="color:red;" id="ermk2"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email"><div style="color:red;" id="eremail"></div>
+                        </div>
+                        <div class="form-group">
+                            <label for="sdt">Số điện thoại</label>
+                            <input type="text" class="form-control" id="sdt"><div style="color:red;" id="ersdt"></div>
+                        </div>
+
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-dark" >Đăng
+                        kí</button>
+                    <button type="button" class="btn btn-dark" data-dismiss="modal">Đóng</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>
